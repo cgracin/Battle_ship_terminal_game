@@ -3,6 +3,9 @@ from random import randint
 
 board = []
 
+# print("Hello!!")
+# print("Welcome to BattleShip")
+
 size = input("Enter board size: ")
 
 size = int(size)
@@ -16,7 +19,7 @@ def print_board(board):
         print(" ".join(i))
 
 
-print_board(board)
+# print_board(board)
 
 
 def place_ship(board):
@@ -24,7 +27,7 @@ def place_ship(board):
     y_var = randint(0, size - 1)
     print(x_var, y_var)
     board[x_var][y_var] = "X"
-    print_board(board)
+    # print_board(board)
 
 
 place_ship(board)
