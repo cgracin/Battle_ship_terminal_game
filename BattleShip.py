@@ -1,6 +1,1 @@
-
-
-
-
-pwd
-clear
+print("hello world!")
