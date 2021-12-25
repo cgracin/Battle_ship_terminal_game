@@ -1,3 +1,6 @@
+
+from random import randint
+
 board = []
 
 size = input("Enter board size: ")
@@ -14,3 +17,14 @@ def print_board(board):
 
 
 print_board(board)
+
+
+def place_ship(board):
+    x_var = randint(0, size - 1)
+    y_var = randint(0, size - 1)
+    print(x_var, y_var)
+    board[x_var][y_var] = "X"
+    print_board(board)
+
+
+place_ship(board)
